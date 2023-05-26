@@ -1,0 +1,118 @@
+@import '../../../../../../../styles/index.scss';
+
+.practice__info-block {
+  .info__dates {
+    margin-bottom: 15px;
+    color: $textGray;
+
+    * {
+      color: $textGray;
+      font-size: 11px;
+    }
+  }
+
+  .info__details {
+    background-color: $white;
+    border: 1px solid $middleGray;
+    border-radius: 8px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 100px;
+    gap: 20px;
+
+    .info__column {
+      &>*:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
+      .details__list {
+        list-style: none;
+
+        li {
+          font-size: 16px;
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .info__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.customer-info__wrapper {
+  .customer-info__header {
+    margin-top: 34px;
+    margin-bottom: 76px;
+    display: flex;
+    justify-content: space-between;
+
+    .customer-info__avatar {
+      display: flex;
+      align-items: center;
+
+      span {
+        background: white;
+        border: solid #DCDFE3 1px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding: 3px 5px;
+        height: fit-content;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        background-color: #FAFAFA;
+      }
+    }
+  }
+
+  .customer-info__description {
+    width: 100%;
+    background: white;
+    border: solid #DCDFE3 1px;
+    border-radius: 8px;
+    padding: 16px 18px;
+
+    .description__row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+
+      .description__item {
+        width: 33%;
+        p {
+          padding-bottom: 14px;
+          font-weight: 600;
+        }
+        .description__sub-item {
+          display: flex;
+          padding-bottom: 4px
+        }
+        .transparent__color {
+          color: rgba(25, 26, 27, 0.5)
+        }
+      }
+    }
+
+    .description__actions {
+      display: flex;
+      justify-content: flex-end
+    }
+  }
+}
+

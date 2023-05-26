@@ -1,0 +1,128 @@
+@import "./modules/colors.scss";
+@import "./modules/mixins.scss";
+@import "./modules/variables.scss";
+@import "./modules/reset.scss";
+
+* {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: $base-font-size;
+  letter-spacing: $base-letter-spacing;
+  line-height: $base-line-height;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: $clearGray;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-shrink: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: $font-weight-bold;
+  color: $darkBlack;
+  letter-spacing: 0.35px;
+}
+
+h1,
+.h1 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+}
+
+h3,
+.h3 {
+  font-size: 18px;
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bolder;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+span,
+p,
+b,
+strong,
+div {
+  color: $black;
+}
+
+.eye-icon {
+  width: 22px;
+  height: 18px;
+}
+
+*[class^='badge-'] {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: $darkBlue;
+  font-weight: $font-weight-bolder;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.MuiTooltip-popper {
+  * {
+    background-color: $clearGray !important;
+    color: $black !important;
+    font-size: 11px !important;
+    letter-spacing: 0.4px;
+  }
+}
+
+.checked__btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    content: '\2212';
+    border: 2px solid $red;
+    background-color: #FBE5E8;
+    color: $red;
+  }
+}

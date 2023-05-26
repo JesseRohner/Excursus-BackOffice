@@ -1,0 +1,69 @@
+@import '../../../styles/index';
+
+.table__privacy-column {
+  display: flex;
+  flex-direction: column;
+
+  .privacy-row {
+    margin-bottom: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+
+    &>img {
+      display: block;
+      margin-right: 5px;
+      height: 10px;
+      width: auto;
+    }
+  }
+}
+
+.table__id-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .id-column__label {
+    text-transform: uppercase;
+    color: $textGray;
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+  }
+}
+
+.table__creator-column {
+  display: flex;
+  text-transform: capitalize;
+}
+
+.table__pictures-column {
+  display: flex;
+
+  &>*:first-child {
+    margin-right: 10px;
+  }
+
+  .attached-all,
+  .attached-doc {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .attached-all {
+    background-color: $lightBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    b {
+      color: $darkBlue;
+      font-size: 11px;
+    }
+  }
+}

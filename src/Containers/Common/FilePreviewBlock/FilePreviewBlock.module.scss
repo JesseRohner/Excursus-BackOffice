@@ -1,0 +1,44 @@
+@import '../../../styles/index.scss';
+
+.file__full-size {
+  padding: 40px 20px;
+  height: 100%;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(46, 51, 56, 0.95);
+
+  .arrow__btn {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .arrow__btn {
+    justify-self: flex-start;
+    width: 30px;
+
+    path {
+      fill: $white;
+    }
+  }
+
+  .file__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>.uploaded-file {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

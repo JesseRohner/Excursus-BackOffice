@@ -1,0 +1,156 @@
+@import '../../../../styles/index.scss';
+
+.add-practice__form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .main-form {
+    background-color: #F1F2F3;
+    flex-shrink: 0;
+    overflow-y: auto;
+    height: 100%;
+    padding: 40px 20px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+
+    .modal__title {
+      margin: 40px 0;
+    }
+
+    .modal__header {
+      align-self: flex-end;
+      cursor: pointer;
+    }
+
+    .submit-btn__wrapper {
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .form-field__wrapper {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.list__wrapper {
+  padding: 40px 20px;
+  height: 100%;
+
+  .arrow__btn {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}
+
+.list__wrapper {
+  flex-shrink: 0;
+  overflow: auto;
+  width: 370px;
+  background-color: #ffff;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .dropdown-list__wrapper {
+      position: relative;
+
+      .dropdown-list {
+        position: absolute;
+        top: 80px;
+        animation: growOut 300ms ease-in-out forwards;
+        transform-origin: top center;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+        background-color: $white;
+        z-index: 10;
+      }
+
+      .dropdown__label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          color: #0040DD;
+          font-size: 16px;
+        }
+
+        svg {
+          path {
+            fill: #0040DD;
+          }
+        }
+      }
+    }
+  }
+}
+
+.value__label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.value__details {
+  background-color: $white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 14px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.value__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .value__fullname {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+
+  .value__id {
+    text-transform: uppercase;
+    color: $textGray;
+  }
+}
+
+@keyframes growOut {
+  0% {
+    transform: scale(0)
+  }
+
+  80% {
+    transform: scale(1.1)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}

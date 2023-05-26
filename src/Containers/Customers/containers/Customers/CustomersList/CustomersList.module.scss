@@ -1,0 +1,18 @@
+@import '../../../../../styles/index';
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h2 {
+      margin-right: 15px;
+    }
+  }
+}

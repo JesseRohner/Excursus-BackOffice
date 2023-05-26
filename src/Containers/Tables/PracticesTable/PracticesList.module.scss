@@ -1,0 +1,18 @@
+@import '../../../styles/index';
+
+.table__id-column {
+  text-align: center;
+  font-weight: 800;
+}
+
+.table__details-column {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.table__status-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

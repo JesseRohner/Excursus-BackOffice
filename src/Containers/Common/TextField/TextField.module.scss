@@ -1,0 +1,103 @@
+@import '../../../styles/index.scss';
+
+.field__wrapper {
+  margin-bottom: 10px;
+  position: relative;
+
+  .field__textarea,
+  .input-group {
+    width: 100%;
+    max-width: 375px;
+    margin-bottom: 10px;
+    color: $black;
+    padding: 10px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .field__textarea,
+  .field__input {
+    width: 100%;
+    border: none;
+    color: $black;
+    font-size: 16px;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $textGray;
+    }
+  }
+
+  .field__textarea {
+    resize: vertical;
+    min-height: 50px;
+    padding-top: 15px !important;
+  }
+
+  .field__textarea:disabled {
+    resize: none;
+  }
+
+  .field__label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .error {
+    display: flex;
+    color: $red;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .error-textarea,
+  .error-field {
+    color: $red;
+  }
+}
+
+.full-height {
+  height: 100%;
+
+  .field__textarea {
+    height: calc(100% - 24px);
+  }
+}
+
+input[type="password"i] {
+  color: $black !important;
+}
+
+input[type="password"i].error-field {
+  color: $red !important;
+}
+
+.input-group {
+  display: flex;
+  padding-right: 10px;
+}
+
+.show-pwd-icon {
+  cursor: pointer;
+
+  path {
+    stroke: $darkBlue;
+  }
+}
+
+.show-pwd-icon__red {
+  path {
+    stroke: $red;
+  }
+}

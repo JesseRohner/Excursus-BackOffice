@@ -1,0 +1,49 @@
+@import '../../../../../../../styles/index.scss';
+
+.store__info-block {
+  margin-bottom: 70px;
+
+  .info__dates {
+    margin-bottom: 15px;
+    color: $textGray;
+
+    * {
+      color: $textGray;
+      font-size: 11px;
+    }
+  }
+
+  .info__details {
+    background-color: $white;
+    border: 1px solid $middleGray;
+    border-radius: 8px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 100px;
+    gap: 20px;
+
+    .info__column {
+      &>*:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
+      .details__list {
+        list-style: none;
+
+        li {
+          font-size: 16px;
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .info__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}

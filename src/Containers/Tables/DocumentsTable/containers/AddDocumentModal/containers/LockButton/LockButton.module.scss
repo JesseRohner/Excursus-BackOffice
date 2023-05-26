@@ -1,0 +1,52 @@
+@import '../../../../../../../styles/index.scss';
+
+
+.checkbox__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: $white;
+  position: relative;
+  border-radius: 8px;
+
+  .label__text {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin-bottom: 5px;
+    }
+
+    * {
+      font-size: 16px;
+    }
+  }
+
+  .checkbox__field {
+    display: none;
+  }
+
+  .checkmark {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 18px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+.description {
+  margin-top: 10px;
+  color: $textGray;
+  padding-left: 10px;
+  font-size: 12px;
+}

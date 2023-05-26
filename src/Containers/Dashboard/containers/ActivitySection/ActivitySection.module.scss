@@ -1,0 +1,72 @@
+@import '../../../../styles/index.scss';
+
+.activity__panel {
+  background-color: $white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  .panel__block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .block__title {
+      color: $viola;
+      font-size: 22px;
+    }
+
+    .activities__list {
+      .activity__wrapper {
+        padding: 20px 0 0;
+        width: 100%;
+
+        .divider {
+          display: block;
+          height: 1px;
+          width: 90%;
+          background-color: $middleGray;
+          margin: 0 auto;
+        }
+
+        .activity__inner {
+          border-left: 3px solid #946cff;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+
+          .activity__content {
+            margin-right: 20px;
+            padding-left: 10px;
+            height: 100%;
+
+            .activity__header {
+              margin-bottom: 5px;
+              display: flex;
+
+              &>span {
+                color: $textGray;
+                font-size: 11px;
+                font-weight: bold;
+              }
+
+              .text__role {
+                text-transform: uppercase;
+              }
+
+              .text__id {
+                color: $darkBlue;
+                font-weight: normal;
+              }
+            }
+
+            .activity__text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../../../styles/index.scss';
+
+.labeled-btn__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .labeled-btn__label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .labeled-btn {
+    width: 100%;
+    color: #0040DD;
+    background-color: #ffff;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+  }
+
+  .labeled-btn:disabled {
+    opacity: 0.5;
+  }
+
+  .labeled-btn__active {
+    background-color: $lightBlue;
+  }
+
+  .error {
+    display: flex;
+    color: $red;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 10px;
+    margin: 10px 0;
+  }
+}

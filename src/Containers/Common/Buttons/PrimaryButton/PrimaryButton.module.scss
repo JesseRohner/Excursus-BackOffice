@@ -1,0 +1,28 @@
+@import '../../../../styles/index.scss';
+
+.primary__btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &>span {
+    font-size: inherit;
+    font-weight: $font-weight-bolder;
+    color: inherit;
+  }
+
+  .left-icon {
+    margin-right: 5px;
+    height: 100%;
+  }
+
+  .right-icon {
+    margin-left: 5px;
+    height: 100%;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

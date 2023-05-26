@@ -1,0 +1,13 @@
+@import '../../../../../../../styles/index';
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 70px;
+
+  h2 {
+    margin-right: 15px;
+  }
+}

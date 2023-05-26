@@ -1,0 +1,83 @@
+@import '../../../styles/index.scss';
+
+
+.checkbox__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid $middleGray;
+  position: relative;
+
+  span {
+    font-size: 16px;
+  }
+
+  .checkbox__field {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    &,
+    &:checked {
+      &::after {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+    }
+
+    &::after {
+      border: 2px solid $darkBlue;
+      background-color: $white;
+      color: $darkBlue;
+      content: '\002B';
+    }
+
+    &:checked::after {
+      content: '\2212';
+      border: 2px solid $red;
+      background-color: #FBE5E8;
+      color: $red;
+    }
+  }
+}
+
+.checkbox__selected-value {
+  border: none;
+  background-color: $white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+
+  span {
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .checkbox__field {
+    width: 15px;
+    height: 15px;
+
+    &,
+    &:checked {
+      &::after {
+        width: 17px;
+        height: 17px;
+        font-size: 18px;
+      }
+    }
+  }
+}

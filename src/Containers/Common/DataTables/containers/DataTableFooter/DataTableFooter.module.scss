@@ -1,0 +1,35 @@
+.pagination {
+
+  .arrow__back,
+  .arrow__next {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+  }
+
+  .arrow__next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .text {
+    display: inline-block;
+    margin: 0 10px;
+
+    b {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .btn__disabled {
+    cursor: not-allowed;
+
+    svg {
+      path {
+        stroke: #2e33388c;
+      }
+    }
+  }
+}

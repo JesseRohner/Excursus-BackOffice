@@ -1,0 +1,144 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "react-app",
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": ["react", "simple-import-sort", "import"],
+  "rules": {
+    "import/no-anonymous-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
+    // "import/no-named-as-default": 0,
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 3
+      }
+    ],
+    "react/prop-types": [0],
+    "array-bracket-newline": ["error", "consistent"],
+    "array-element-newline": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 140,
+        "ignoreUrls": true
+      }
+    ],
+    "arrow-body-style": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": "error",
+    "comma-dangle": ["error", "only-multiline"],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "comma-style": "error",
+    "computed-property-spacing": ["error", "never"],
+    "eol-last": "error",
+    "key-spacing": "error",
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "multiline-ternary": ["warn", "always-multiline"],
+    "new-cap": [
+      "warn",
+      {
+        "newIsCap": true,
+        "capIsNew": true
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "no-lonely-if": "error",
+    "no-proto": "error",
+    "no-return-await": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-unneeded-ternary": [
+      "error",
+      {
+        "defaultAssignment": false
+      }
+    ],
+    "no-useless-computed-key": "error",
+    "no-useless-rename": "error",
+    "no-unused-vars": ["warn"],
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "consistent": true,
+        "minProperties": 3
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "object-shorthand": ["error", "always", { "ignoreConstructors": true }],
+    "operator-assignment": ["error", "always"],
+    "operator-linebreak": ["error", "after"],
+    "indent": [
+      2,
+      "tab",
+      {
+        "ignoredNodes": ["TemplateLiteral"]
+      }
+    ],
+    "no-tabs": 0,
+    "semi": ["error", "always"],
+    "no-case-declarations": "off",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/no-unresolved": "error",
+    "import/no-unused-modules": "error",
+    "padded-blocks": ["error", "never"],
+    "require-await": "warn",
+    "semi-spacing": "error",
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "ignore"
+      }
+    ],
+    "space-before-blocks": "error",
+    "sort-imports": "off",
+    "simple-import-sort/imports": "error",
+    "switch-colon-spacing": "error",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../../../styles/index.scss';
+
+.nav__item {
+  .item__inner {
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .inner__complex {
+    .item__arrow {
+      transform: rotate(90deg);
+    }
+
+    .arrow__rotate {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .nav__sub-menu {
+    .nav__sub-item {
+      padding: 10px 15px 10px 25px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.nav-item__active {
+
+  .item__inner {
+    background-color: $darkBlue;
+
+    span {
+      color: $white;
+    }
+
+    .item__arrow {
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  .nav__sub-menu {
+    .sub-item__active {
+      background-color: $blueHover;
+
+      span {
+        color: $white;
+      }
+
+      .item__arrow {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

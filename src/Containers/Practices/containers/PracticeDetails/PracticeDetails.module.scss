@@ -1,0 +1,36 @@
+@import '../../../../styles/index.scss';
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .container__title {
+    margin-bottom: 20px;
+  }
+
+  .table__wrapper {
+    .table__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      h2 {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .container__actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    &>button:first-child {
+      margin-bottom: 25px;
+    }
+  }
+}

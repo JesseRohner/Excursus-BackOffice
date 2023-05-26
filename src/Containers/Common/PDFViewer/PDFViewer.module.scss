@@ -1,0 +1,50 @@
+.pdf-preview__wrap {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+
+  canvas {
+    margin: 0 auto;
+  }
+}
+
+
+.pdf-preview__full {
+  height: auto;
+
+  .file__info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #ffff;
+      margin-bottom: 10px;
+    }
+
+    .info__actions {
+      display: flex;
+
+      &>button:first-child {
+        margin-right: 10px;
+      }
+
+      &>button {
+        padding: 5px;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+
+    .page-count {
+      outline: none;
+      border: none;
+      margin: 0 10px;
+      width: 40px;
+      text-align: center;
+      padding: 3px;
+    }
+  }
+}

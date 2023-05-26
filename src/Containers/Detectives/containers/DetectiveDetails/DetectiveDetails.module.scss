@@ -1,0 +1,28 @@
+@import '../../../../styles/index.scss';
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 70px;
+
+    h2 {
+      margin-right: 15px;
+    }
+  }
+  .container__action {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.table__details-column {
+  text-transform: capitalize;
+}

@@ -1,0 +1,26 @@
+.switcher__wrapper {
+  width: 100%;
+  min-height: 40px;
+  background-color: white;
+  display: flex;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  .switcher__button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.field__label{
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}

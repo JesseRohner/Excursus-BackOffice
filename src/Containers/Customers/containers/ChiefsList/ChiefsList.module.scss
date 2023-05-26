@@ -1,0 +1,27 @@
+@import '../../../../styles/index.scss';
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h2 {
+      margin-right: 15px;
+    }
+  }
+}
+
+.table__is-buyer-column {
+  display: flex;
+  justify-content: center;
+}
+
+.table__details-column {
+  text-transform: capitalize;
+}

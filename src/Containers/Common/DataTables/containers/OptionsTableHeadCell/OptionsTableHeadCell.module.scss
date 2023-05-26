@@ -1,0 +1,52 @@
+.options-cell {
+  background: #2E3338;
+  color: inherit;
+  text-align: left;
+  word-break: break-word;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  vertical-align: inherit;
+
+  .actions__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+    &>button:hover:after {
+      z-index: 110;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      padding: 8px;
+      bottom: -40px;
+      background-color: #F6F7F8;
+      color: #2E3338;
+      font-size: 11px;
+      letter-spacing: 0.4px;
+      border-radius: 4px;
+    }
+
+    &>button:first-child {
+      margin-right: 5px;
+      position: relative;
+
+      &:hover::after {
+        content: 'Options';
+        width: 50px;
+        left: 40%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &>button:nth-child(2) {
+      position: relative;
+
+      &:hover::after {
+        content: 'Reset options';
+        width: 80px;
+        right: 0;
+      }
+    }
+  }
+}
